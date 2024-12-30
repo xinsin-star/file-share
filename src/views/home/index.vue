@@ -1,20 +1,16 @@
 <script setup lang="ts">
+import HomeMenu from "@/components/menu/homeMenu.vue";
+import Bar from "@/components/headerBar/bar.vue";
 </script>
 
 <template>
   <el-container style="height: 100vh">
-    <el-header>
-      <div style="display:flex;">
-        <div>
-          <h2>文件分享站V2.0</h2>
-        </div>
-        <div>
-          <img src="../../../public/UserAvatar.jpg" alt="" width="50">
-        </div>
-      </div>
+    <el-header class="header-item" style="border-radius: 10px 10px 10px 0">
+      <bar/>
     </el-header>
     <el-container>
-      <el-aside width="50px">
+      <el-aside width="70px" class="header-item" style="border-radius: 0 0 10px 10px">
+        <home-menu/>
       </el-aside>
       <el-container>
         <el-main>
@@ -26,12 +22,8 @@
 </template>
 
 <style scoped>
-.logo.vite:hover {
-  filter: drop-shadow(0 0 2em #747bff);
+.header-item {
+  background-color: rgb(224.6, 242.8, 215.6);
+  border-radius: 10px;
 }
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #249b73);
-}
-
 </style>

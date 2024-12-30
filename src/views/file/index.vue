@@ -29,7 +29,7 @@ onMounted(() => {
 
 <template>
   <div v-loading="loading">
-    dsadasxs
+    <el-empty description="空数据" />
   </div>
 </template>
 
