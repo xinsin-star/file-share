@@ -4,6 +4,7 @@ import dayjs from "./vite/dayjs.ts";
 import router from "./router";
 import pinia from "./pinia";
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import 'element-plus/dist/index.css'
 
 const app = createApp(App)
 

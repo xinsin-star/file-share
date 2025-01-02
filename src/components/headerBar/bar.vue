@@ -8,11 +8,11 @@ const user = userStore()
 
 onMounted(() => {
   // user.register("xinsin", "xinsin", "user")
-  setTimeout(() => {
-    user.login("xinsin", "xinsin").then(res => {
-      console.log(user.isLogin())
-    })
-  }, 4000)
+  // setTimeout(() => {
+  //   user.login("xinsin", "xinsin").then(res => {
+  //     console.log(user.isLogin())
+  //   })
+  // }, 4000)
 })
 </script>
 
