@@ -1,13 +1,10 @@
-<script setup lang="ts">
-</script>
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #747bff);
+}
 
-<template>
-  <div>
-    <router-view/>
-  </div>
-</template>
-
-<style>
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -117,5 +114,3 @@ button {
     background-color: #0f0f0f69;
   }
 }
-
-</style>
