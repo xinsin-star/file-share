@@ -1,0 +1,429 @@
+{
+  "id": "5032507",
+  "name": "fileshare",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1126",
+      "name": "文件夹",
+      "font_class": "wenjianjia",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1129",
+      "name": "未打卡的文件夹",
+      "font_class": "weidaqiadewenjianjia",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "217235",
+      "name": "android",
+      "font_class": "android",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "622431",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e740",
+      "unicode_decimal": 59200
+    },
+    {
+      "icon_id": "1004136",
+      "name": "txt",
+      "font_class": "txt",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "1004139",
+      "name": "html",
+      "font_class": "html",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "1160125",
+      "name": "css",
+      "font_class": "css",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "1160159",
+      "name": "js",
+      "font_class": "js",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "1344642",
+      "name": "mp4",
+      "font_class": "mp",
+      "unicode": "e8ac",
+      "unicode_decimal": 59564
+    },
+    {
+      "icon_id": "1453447",
+      "name": "html",
+      "font_class": "html1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "1973256",
+      "name": "多文件夹",
+      "font_class": "duowenjianjia",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "2794637",
+      "name": "pdf",
+      "font_class": "pdf1",
+      "unicode": "e8e8",
+      "unicode_decimal": 59624
+    },
+    {
+      "icon_id": "4765970",
+      "name": "code library",
+      "font_class": "codelibrary",
+      "unicode": "e793",
+      "unicode_decimal": 59283
+    },
+    {
+      "icon_id": "4766479",
+      "name": "file-zip",
+      "font_class": "file-zip",
+      "unicode": "e7bb",
+      "unicode_decimal": 59323
+    },
+    {
+      "icon_id": "4893191",
+      "name": "文件夹",
+      "font_class": "wenjianjia1",
+      "unicode": "ec17",
+      "unicode_decimal": 60439
+    },
+    {
+      "icon_id": "4893195",
+      "name": "JPG",
+      "font_class": "JPG",
+      "unicode": "ec18",
+      "unicode_decimal": 60440
+    },
+    {
+      "icon_id": "4893196",
+      "name": "PNG",
+      "font_class": "PNG",
+      "unicode": "ec19",
+      "unicode_decimal": 60441
+    },
+    {
+      "icon_id": "4936609",
+      "name": "file-ppt-fill",
+      "font_class": "file-ppt-fill",
+      "unicode": "e858",
+      "unicode_decimal": 59480
+    },
+    {
+      "icon_id": "4936612",
+      "name": "file-zip-fill",
+      "font_class": "file-zip-fill",
+      "unicode": "e859",
+      "unicode_decimal": 59481
+    },
+    {
+      "icon_id": "4936955",
+      "name": "alipay",
+      "font_class": "alipay",
+      "unicode": "e87c",
+      "unicode_decimal": 59516
+    },
+    {
+      "icon_id": "4936958",
+      "name": "HTML5",
+      "font_class": "HTML",
+      "unicode": "e87d",
+      "unicode_decimal": 59517
+    },
+    {
+      "icon_id": "4936980",
+      "name": "android-fill",
+      "font_class": "android-fill",
+      "unicode": "e881",
+      "unicode_decimal": 59521
+    },
+    {
+      "icon_id": "5703781",
+      "name": "java-1",
+      "font_class": "java-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "5729484",
+      "name": "css",
+      "font_class": "css1",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5916413",
+      "name": "JAVA",
+      "font_class": "JAVA",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5916428",
+      "name": "RAR",
+      "font_class": "RAR",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "5961331",
+      "name": "js",
+      "font_class": "js1",
+      "unicode": "ec68",
+      "unicode_decimal": 60520
+    },
+    {
+      "icon_id": "6294556",
+      "name": "PNG",
+      "font_class": "PNG1",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "6294557",
+      "name": "JPG",
+      "font_class": "JPG1",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "6294598",
+      "name": "MP4",
+      "font_class": "MP",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "6605083",
+      "name": "macos",
+      "font_class": "macos",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "6805502",
+      "name": "Excel",
+      "font_class": "Excel",
+      "unicode": "e998",
+      "unicode_decimal": 59800
+    },
+    {
+      "icon_id": "6805509",
+      "name": "Word",
+      "font_class": "Word",
+      "unicode": "e99a",
+      "unicode_decimal": 59802
+    },
+    {
+      "icon_id": "6808502",
+      "name": "Windows",
+      "font_class": "Windows",
+      "unicode": "edd4",
+      "unicode_decimal": 60884
+    },
+    {
+      "icon_id": "7450583",
+      "name": "文件夹",
+      "font_class": "_wenjianjia",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "8288813",
+      "name": "Excel",
+      "font_class": "Excel1",
+      "unicode": "e83b",
+      "unicode_decimal": 59451
+    },
+    {
+      "icon_id": "8288815",
+      "name": "Txt",
+      "font_class": "Txt",
+      "unicode": "e83d",
+      "unicode_decimal": 59453
+    },
+    {
+      "icon_id": "8288819",
+      "name": "Word",
+      "font_class": "Word1",
+      "unicode": "e83e",
+      "unicode_decimal": 59454
+    },
+    {
+      "icon_id": "8765260",
+      "name": "png",
+      "font_class": "png",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "8765262",
+      "name": "ppt",
+      "font_class": "ppt",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "9968245",
+      "name": "PPT",
+      "font_class": "PPT",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "10281802",
+      "name": "macos",
+      "font_class": "macos1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "13304036",
+      "name": "rust",
+      "font_class": "rust",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "13743976",
+      "name": "react",
+      "font_class": "react",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "15274709",
+      "name": "react",
+      "font_class": "react1",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "15378716",
+      "name": "python",
+      "font_class": "python",
+      "unicode": "ec66",
+      "unicode_decimal": 60518
+    },
+    {
+      "icon_id": "17581365",
+      "name": "Python",
+      "font_class": "Python",
+      "unicode": "ec39",
+      "unicode_decimal": 60473
+    },
+    {
+      "icon_id": "18174834",
+      "name": "文件,json",
+      "font_class": "json-full",
+      "unicode": "ea42",
+      "unicode_decimal": 59970
+    },
+    {
+      "icon_id": "18174835",
+      "name": "文件,json",
+      "font_class": "json",
+      "unicode": "ea43",
+      "unicode_decimal": 59971
+    },
+    {
+      "icon_id": "18991788",
+      "name": "word",
+      "font_class": "word",
+      "unicode": "e892",
+      "unicode_decimal": 59538
+    },
+    {
+      "icon_id": "27365140",
+      "name": "java",
+      "font_class": "java",
+      "unicode": "ec0a",
+      "unicode_decimal": 60426
+    },
+    {
+      "icon_id": "27365146",
+      "name": "js",
+      "font_class": "js2",
+      "unicode": "ec0c",
+      "unicode_decimal": 60428
+    },
+    {
+      "icon_id": "27365258",
+      "name": "rust",
+      "font_class": "rust1",
+      "unicode": "ec1c",
+      "unicode_decimal": 60444
+    },
+    {
+      "icon_id": "34452859",
+      "name": "format-pdf",
+      "font_class": "format-pdf",
+      "unicode": "e82b",
+      "unicode_decimal": 59435
+    },
+    {
+      "icon_id": "35252798",
+      "name": "JAVA",
+      "font_class": "a-ziyuan1",
+      "unicode": "e7eb",
+      "unicode_decimal": 59371
+    },
+    {
+      "icon_id": "39981222",
+      "name": "C",
+      "font_class": "C",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "39981241",
+      "name": "C#",
+      "font_class": "a-C",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "39981248",
+      "name": "C++",
+      "font_class": "a-C1",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "39981291",
+      "name": "RUST",
+      "font_class": "RUST",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "42800365",
+      "name": "json",
+      "font_class": "json1",
+      "unicode": "e817",
+      "unicode_decimal": 59415
+    }
+  ]
+}
