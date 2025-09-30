@@ -3,10 +3,13 @@ import {Content, Header, Footer} from "antd/es/layout/layout";
 import React from "react";
 import Index from "./views";
 import "./App.css"
+import XHeader from "./components/layout/XHeader.tsx";
+import useUserStore from "./store/user.ts";
 
 function App() {
+    const userName = useUserStore((state) => state.user.name);
+
     const headerStyle: React.CSSProperties = {
-        textAlign: 'center',
         color: '#fff',
         height: '10vh',
         paddingInline: 48,
@@ -33,11 +36,11 @@ function App() {
 
     return (
       <Flex gap="middle" wrap>
-          <Watermark content="guess">
+          <Watermark content={userName != null ? userName : "guess"}>
               <Layout style={layoutStyle}>
-                  <Header style={headerStyle}>Header</Header>
+                  <Header style={headerStyle}><XHeader/></Header>
                   <Content style={contentStyle}>
-                      <Index></Index>
+                      <Index />
                   </Content>
                   <Footer style={footerStyle}>Footer</Footer>
               </Layout>
