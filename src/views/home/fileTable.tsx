@@ -1,12 +1,11 @@
 import {message, Table} from "antd";
-import React, {useCallback, useEffect, useRef, useState} from "react";
-import {columns, DataType} from "./tableType.ts";
+import React, {useEffect, useRef, useState} from "react";
+import {columns, DataType} from "./tableType.tsx";
 import {TableRowSelection} from "antd/es/table/interface";
 import {selectFileList} from "../../api/fileApi.ts";
 import {RequestFileEntityImpl} from "../../entity/RequestFileEntity.ts";
-import {requestParams, requestSWR} from "../../util/request.ts";
-import {ArgsProps} from "antd/es/message";
 import {MessageType} from "antd/es/message/interface";
+import {DownOutlined, RightOutlined, UpOutlined} from "@ant-design/icons";
 
 // 选中时回调配置项
 const rowSelection: TableRowSelection<DataType> = {
@@ -21,12 +20,30 @@ const rowSelection: TableRowSelection<DataType> = {
     },
 };
 
-// 展开配置项
-const expandableProps = {
-    expandRowByClick: true
+const nextFolderChildren = (data: Array<any>) => {
+    data.forEach((item) => {
+        if (item.children) {
+            nextFolderChildren(item.children);
+        } else {
+            if (item.type === 'FOLDER') {
+                item.children = []
+            }
+        }
+    })
+}
+const nextFolderChildrenData = (data: Array<any>, folderId: number, requestData: Array<any>) => {
+    data.forEach((item) => {
+        if (item.id === folderId) {
+            item.children = requestData
+        } else {
+            if (item.children) {
+                nextFolderChildrenData(item.children, folderId, requestData);
+            }
+        }
+    })
 }
 
-const FileTable = () => {
+export const FileTable = () => {
     const [dataSource, setDataSource] = useState([])
     const [loading, setLoading] = useState(false)
     const [total, setTotal] = useState(0)
@@ -35,18 +52,59 @@ const FileTable = () => {
     const [messageApi, contextHolder] = message.useMessage();
     const messageInfo = useRef<MessageType | undefined>(undefined);
 
+    // 展开配置项
+    const expandableProps = {
+        expandRowByClick: true,
+        onExpand: (expanded, record) => {
+            // 这里设置行展开的查询动作
+            if (expanded) {
+                if (record.type === 'FOLDER') {
+                    requestFileEntityRef.current.folder = record.id
+                    requestFileEntityRef.current.page = 1
+                    // 查询
+                    mutate().then(res => {})
+                }
+            }
+        },
+        // expandIcon: (props) => {
+        //     if (props.record.type === 'FOLDER') {
+        //         if (props.expanded) {
+        //             return <DownOutlined style={{cursor: 'pointer'}} />
+        //         } else {
+        //             return <RightOutlined style={{cursor: 'pointer'}} />
+        //         }
+        //     } else {
+        //         return <></>
+        //     }
+        // }
+    }
+
     // SWR 获取数据
     const { data, isLoading, mutate } = selectFileList(requestFileEntityRef.current)
 
     // 数据变化时更新
     useEffect(() => {
         setLoading(isLoading)
-        if (data?.data?.data && !isMore) {
-            setDataSource(prev => [...prev, ...data.data.data])
-            setTotal(data.data.total)
-            if (Math.ceil(data.data.total / requestFileEntityRef.current.num) < requestFileEntityRef.current.page + 1) {
-                setIsMore(true)
+        if (requestFileEntityRef.current.folder === -1) {
+            if (data?.data?.data && !isMore) {
+                setDataSource(prev => {
+                    let data1 = [...prev, ...data.data.data]
+                    // 设置为文件夹可打开
+                    nextFolderChildren(data1)
+                    return data1
+                })
+                setTotal(data.data.total)
+                if (Math.ceil(data.data.total / requestFileEntityRef.current.num) < requestFileEntityRef.current.page + 1) {
+                    setIsMore(true)
+                }
             }
+        } else {
+            setDataSource(prev => {
+                let data1 = [...prev]
+                nextFolderChildrenData(data1, requestFileEntityRef.current.folder, data.data.data)
+                nextFolderChildren(data1)
+                return data1
+            })
         }
     }, [data])
 
